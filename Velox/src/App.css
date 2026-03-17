@@ -1,0 +1,29 @@
+.custom-link:hover {
+  text-decoration: underline !important;
+}
+
+
+@keyframes custom-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes custom-rotate-back {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.animate-orbit-active {
+  animation: custom-rotate 15s linear infinite !important;
+  animation-play-state: paused !important;
+}
+
+.animate-icon-active {
+  animation: custom-rotate-back 15s linear infinite !important;
+  animation-play-state: paused !important;
+}
+
+.group:hover .animate-orbit-active,
+.group:hover .animate-icon-active {
+  animation-play-state: running !important;
+}
