@@ -19,13 +19,13 @@ const OrbitIllustration = () => {
             </div>
 
             {/* Orbit */}
-            <div className='animate-orbit-active absolute w-40 h-40 border border-dashed border-cyan-950 rounded-full transition-all'>
+            <div className='animate-orbit-active absolute w-30 md:w-40 h-30 md:h-40 border border-dashed border-cyan-950 rounded-full transition-all'>
                 {icons.map((icon, index) => (
                     <div
                         key={index}
-                        className='absolute top-1/2 left-1/2 w-10 h-10'
+                        className='absolute top-1/2 left-1/2 w-10 h-10 [--radius:58px] md:[--radius:78px]'
                         style={{
-                            transform: `translate(-50%, -50%) rotate(${icon.angle}deg) translate(78px) rotate(-${icon.angle}deg)`
+                            transform: `translate(-50%, -50%) rotate(${icon.angle}deg) translate(var(--radius)) rotate(-${icon.angle}deg)`
                         }}>
                         <div className='animate-icon-active w-full h-full bg-white rounded-full flex items-center justify-center border border-slate-100 shadow-ml'>
                             <img src={icon.src} className='w-5 h-5' alt="icon" />
