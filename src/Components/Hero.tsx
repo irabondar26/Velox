@@ -13,7 +13,7 @@ export default function Hero() {
                 </div>
                 <p className="text-xs md:text-base text-white">Interest earned!</p>
             </div>
-            <div className="hidden absolute top-[70%] right-[70%] py-1 pl-1 pr-2 rounded-full justify-center items-center gap-x-1  bg-cyan-950 opacity-80 sm:inline-flex md:py-2 md:pl-2 md:pr-5 md:gap-x-2.5">
+            <div className="hidden absolute top-[70%] right-[67%] py-1 pl-1 pr-2 rounded-full justify-center items-center gap-x-1  bg-cyan-950 opacity-80 sm:inline-flex md:py-2 md:pl-2 md:pr-5 md:gap-x-2.5">
                 <div className="bg-sky-300 rounded-full p-1 inline-block md:p-2">
                     <img className="w-4 h-4" src={creditcard} alt="creditcard" />
                 </div>
